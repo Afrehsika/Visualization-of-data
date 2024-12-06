@@ -11,7 +11,7 @@ from kivymd.uix.screen import MDScreen
 
 import matplotlib.pyplot as plt
 
-Window.size = (720, 1368)  # Set window size
+Window.size = (400, 700)  # Set window size
 
 KV = '''
 ScrollView:
