@@ -427,6 +427,36 @@ MDNavigationLayout:
                 size_hint_y: None
                 height: self.minimum_height
 
+                MDCard:
+                    orientation: "vertical"
+                    padding: dp(15)
+                    spacing: dp(10)
+                    size_hint_y: None
+                    height: self.minimum_height
+                    elevation: 1
+                    
+                    MDLabel:
+                        text: "Use Loaded Data"
+                        font_style: "Subtitle1"
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                    
+                    MDBoxLayout:
+                        orientation: "horizontal"
+                        spacing: dp(10)
+                        size_hint_y: None
+                        height: dp(40)
+                        
+                        MDRaisedButton:
+                            text: "Fill Values from Column"
+                            size_hint_x: 0.5
+                            on_release: app.show_column_selector("pie", "pie_values")
+                        
+                        MDRaisedButton:
+                            text: "Fill Labels from Column"
+                            size_hint_x: 0.5
+                            on_release: app.show_column_selector("pie", "pie_labels")
+
                 MDTextField:
                     id: pie_values
                     hint_text: "Values (comma-separated)"
@@ -459,6 +489,24 @@ MDNavigationLayout:
                 size_hint_y: None
                 height: self.minimum_height
 
+                MDCard:
+                    orientation: "vertical"
+                    padding: dp(15)
+                    spacing: dp(10)
+                    size_hint_y: None
+                    height: self.minimum_height
+                    elevation: 1
+                    
+                    MDLabel:
+                        text: "Use Loaded Data"
+                        font_style: "Subtitle1"
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                    
+                    MDRaisedButton:
+                        text: "Fill Data from Column"
+                        on_release: app.show_column_selector("histogram", "raw_data")
+
                 MDTextField:
                     id: raw_data
                     hint_text: "Raw Data (comma-separated)"
@@ -490,6 +538,36 @@ MDNavigationLayout:
                 spacing: dp(15)
                 size_hint_y: None
                 height: self.minimum_height
+
+                MDCard:
+                    orientation: "vertical"
+                    padding: dp(15)
+                    spacing: dp(10)
+                    size_hint_y: None
+                    height: self.minimum_height
+                    elevation: 1
+                    
+                    MDLabel:
+                        text: "Use Loaded Data"
+                        font_style: "Subtitle1"
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                    
+                    MDBoxLayout:
+                        orientation: "horizontal"
+                        spacing: dp(10)
+                        size_hint_y: None
+                        height: dp(40)
+                        
+                        MDRaisedButton:
+                            text: "Fill X from Column"
+                            size_hint_x: 0.5
+                            on_release: app.show_column_selector("line", "x_points")
+                        
+                        MDRaisedButton:
+                            text: "Fill Y from Column"
+                            size_hint_x: 0.5
+                            on_release: app.show_column_selector("line", "y_points")
 
                 MDTextField:
                     id: slope
@@ -536,6 +614,24 @@ MDNavigationLayout:
                 spacing: dp(15)
                 size_hint_y: None
                 height: self.minimum_height
+
+                MDCard:
+                    orientation: "vertical"
+                    padding: dp(15)
+                    spacing: dp(10)
+                    size_hint_y: None
+                    height: self.minimum_height
+                    elevation: 1
+                    
+                    MDLabel:
+                        text: "Use Loaded Data"
+                        font_style: "Subtitle1"
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                    
+                    MDRaisedButton:
+                        text: "Fill Data from Column"
+                        on_release: app.show_column_selector("boxplot", "data")
 
                 MDTextField:
                     id: data
@@ -667,6 +763,24 @@ MDNavigationLayout:
                 size_hint_y: None
                 height: self.minimum_height
 
+                MDCard:
+                    orientation: "vertical"
+                    padding: dp(15)
+                    spacing: dp(10)
+                    size_hint_y: None
+                    height: self.minimum_height
+                    elevation: 1
+                    
+                    MDLabel:
+                        text: "Use Loaded Data"
+                        font_style: "Subtitle1"
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                    
+                    MDRaisedButton:
+                        text: "Fill Data from Column"
+                        on_release: app.show_column_selector("qqplot", "data")
+
                 MDTextField:
                     id: data
                     hint_text: "Data (comma-separated)"
@@ -694,6 +808,24 @@ MDNavigationLayout:
                 spacing: dp(15)
                 size_hint_y: None
                 height: self.minimum_height
+
+                MDCard:
+                    orientation: "vertical"
+                    padding: dp(15)
+                    spacing: dp(10)
+                    size_hint_y: None
+                    height: self.minimum_height
+                    elevation: 1
+                    
+                    MDLabel:
+                        text: "Use Loaded Data"
+                        font_style: "Subtitle1"
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                    
+                    MDRaisedButton:
+                        text: "Fill Data from Column"
+                        on_release: app.show_column_selector("descriptive", "data")
 
                 MDTextField:
                     id: data
